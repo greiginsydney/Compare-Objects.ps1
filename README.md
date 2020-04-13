@@ -23,25 +23,25 @@ One of my earliest requirements was to compare client policies in Skype for Busi
 ```powershell
 PS: C:> .\Compare-Objects.ps1 csclientpolicy Hotdesking SkypeUI -Verbose
 ```
-<img id="199301" src="/site/view/file/199301/1/Compare-CsClientPolicy.png" alt="" width="600" />
+<img src="https://user-images.githubusercontent.com/11004787/79122130-4c059c00-7dda-11ea-9f68-69e8861413a0.png" alt="" width="600" />
 Two users?
 ```powershell
 PS: C:> .\Compare-Objects.ps1 csuser greig jessica
 ```
-<img id="199302" src="/site/view/file/199302/1/Compare-CsUser.png" alt="" width="600" />
+<img src="https://user-images.githubusercontent.com/11004787/79122139-56c03100-7dda-11ea-832f-d3ab7883f250.png" alt="" width="600" />
 VMs:
 <img id="199303" src="/site/view/file/199303/1/Compare-vm.png" alt="" width="600" />
 ... even Disks:
 ```powershell
 PS: C:> .\Compare-Objects.ps1 -Type disk 0 1 -Verbose
 ```
-<img id="199304" src="/site/view/file/199304/1/Compare-Disk.png" alt="" width="600" />
+<img src="https://user-images.githubusercontent.com/11004787/79122177-6ccdf180-7dda-11ea-90ab-49f4211bbebe.png" alt="" width="600" />
 
 ### Bugs?
 
 If you encounter any object types or attributes that report errors, please raise an Issue here (or in the comments <a href="https://greiginsydney.com/compare-objects.ps1" target="_blank">back on my blog</a>) and I'll do my best to  cater for them.
 I will admit to drawing a blank with a couple of exchange attributes, as you can see from the errors thrown when I compare two mailbox databases:
-<img id="199305" src="/site/view/file/199305/1/Compare-MailboxDatabases.png" alt="" width="600" />
+<img src="https://user-images.githubusercontent.com/11004787/79122192-748d9600-7dda-11ea-9409-a7a0f0fb8c45.png" alt="" width="600" />
 
 ### The Wheel, reinvented
 
