@@ -36,21 +36,27 @@ VMs:
 PS: C:> .\Compare-Objects.ps1 -Type disk 0 1 -Verbose
 ```
 <img id="199304" src="/site/view/file/199304/1/Compare-Disk.png" alt="" width="600" />
+
 ### Bugs?
-If you encounter any object types or attributes that report errors, please let me know in the questions here (or in the comments <a href="https://greiginsydney.com/compare-objects.ps1" target="_blank">back on my blog</a>) and I'll do my best to  cater for them.
+
+If you encounter any object types or attributes that report errors, please raise an Issue here (or in the comments <a href="https://greiginsydney.com/compare-objects.ps1" target="_blank">back on my blog</a>) and I'll do my best to  cater for them.
 I will admit to drawing a blank with a couple of exchange attributes, as you can see from the errors thrown when I compare two mailbox databases:
 <img id="199305" src="/site/view/file/199305/1/Compare-MailboxDatabases.png" alt="" width="600" />
+
 ### The Wheel, reinvented
+
 In the process of writing this post I stumbled upon Jamie Nelson's post on the TechNet blog "<a href="https://blogs.technet.microsoft.com/janesays/2017/04/25/compare-all-properties-of-two-objects-in-windows-powershell/" target="_blank">Compare  all properties of two objects in Windows PowerShell</a>", in which he provides a neat function in 22 lines of code that basically does all of the above. Yes, I cursed a little at that belated finding, but kudos Jamie for stepping into the breach.
+
 ### Revision History
-v1.1 - 20th May 2018
+
+#### v1.1 - 20th May 2018
 - When queried, the PowerShell ISE reports the screen width is 0. Script now checks for zero and forces width to 80
-- Added override switch &lsquo;-width' for extra user control. I assume this is only ever going to be needed by die-hard ISE users ;-) 
+- Added override switch '-width' for extra user control. I assume this is only ever going to be needed by die-hard ISE users ;-) 
 - Allowed the script to accept a -type of $null so the user can pass in entire objects to be compared, rather than just strings (see examples)
-- Added a &lsquo;select-object' to only compare the FIRST instance if what's passed in/returned is an array of more than 1 object, and displays a warning
+- Added a 'select-object' to only compare the FIRST instance if what's passed in/returned is an array of more than 1 object, and displays a warning
 - Added pipeline handling so you can pipe objects to the script (run get-help -full)
 
-v1.0 - 5th May 2018. This is the initial release.
+#### v1.0 - 5th May 2018. This is the initial release.
  
 
 <br>
