@@ -24,17 +24,23 @@ One of my earliest requirements was to compare client policies in Skype for Busi
 PS: C:> .\Compare-Objects.ps1 csclientpolicy Hotdesking SkypeUI -Verbose
 ```
 <img src="https://user-images.githubusercontent.com/11004787/79122130-4c059c00-7dda-11ea-9f68-69e8861413a0.png" alt="" width="600" />
+
 Two users?
+
 ```powershell
 PS: C:> .\Compare-Objects.ps1 csuser greig jessica
 ```
+
 <img src="https://user-images.githubusercontent.com/11004787/79122139-56c03100-7dda-11ea-832f-d3ab7883f250.png" alt="" width="600" />
+
 VMs:
 <img src="https://user-images.githubusercontent.com/11004787/79122350-c46c5d00-7dda-11ea-89ca-96708dea55cc.pngg" alt="" width="600" />
 ... even Disks:
+
 ```powershell
 PS: C:> .\Compare-Objects.ps1 -Type disk 0 1 -Verbose
 ```
+
 <img src="https://user-images.githubusercontent.com/11004787/79122177-6ccdf180-7dda-11ea-90ab-49f4211bbebe.png" alt="" width="600" />
 
 ### Bugs?
