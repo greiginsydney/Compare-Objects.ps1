@@ -49,6 +49,7 @@ PS: C:> .\Compare-Objects.ps1 -Type disk 0 1 -Verbose
 
 If you encounter any object types or attributes that report errors, please raise an Issue here (or in the comments <a href="https://greiginsydney.com/compare-objects.ps1" target="_blank">back on my blog</a>) and I'll do my best to  cater for them.
 I will admit to drawing a blank with a couple of exchange attributes, as you can see from the errors thrown when I compare two mailbox databases:
+
 <img src="https://user-images.githubusercontent.com/11004787/79122192-748d9600-7dda-11ea-9409-a7a0f0fb8c45.png" alt="" width="600" />
 
 ### The Wheel, reinvented
