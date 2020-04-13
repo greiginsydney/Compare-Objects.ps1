@@ -30,7 +30,7 @@ PS: C:> .\Compare-Objects.ps1 csuser greig jessica
 ```
 <img src="https://user-images.githubusercontent.com/11004787/79122139-56c03100-7dda-11ea-832f-d3ab7883f250.png" alt="" width="600" />
 VMs:
-<img id="199303" src="/site/view/file/199303/1/Compare-vm.png" alt="" width="600" />
+<img src="https://user-images.githubusercontent.com/11004787/79122350-c46c5d00-7dda-11ea-89ca-96708dea55cc.pngg" alt="" width="600" />
 ... even Disks:
 ```powershell
 PS: C:> .\Compare-Objects.ps1 -Type disk 0 1 -Verbose
